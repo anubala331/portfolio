@@ -1,0 +1,665 @@
+<!--  **************************Start Container **************************  -->
+<div class="container">
+
+<!--  **************************Start HOME **************************  -->
+  <section id="home">   
+<!--  =========================start row 1 ==========================  -->       
+                <div class="row">
+<!--  =========================start col 1 ==========================  -->   
+  
+                    <div class="col-lg-6">
+                      {{!-- row 1 --}}      
+                    <div class="row" style="--bs-gutter-x:0%"> 
+                       {{!-- col 1 --}}
+                        <div class="col-lg-6"  style="width:auto;height:auto">
+                            <img id="profile" src="{{profile}}"  alt="profile">
+                        </div>
+                  
+                  {{!-- col 2 --}}
+                    <div  class="col-lg-7">
+                        
+                        <div style="margin-top:10px" class="text">
+                        <h3>Hey</h3>
+                        <h2 class="text-uppercase" >{{profileline1}}</h2>
+                        <h5 class="text-uppercase"> {{profileline2}} </h5>
+                        </div>
+                   
+       <!--  =========================start contact box ==========================  -->               
+                     <div class="text">
+
+                            <ul>
+                                <li>
+                                    <a href="{{mailid}}">
+                                        <i class="fa fa-envelope"></i>
+                                            {{email}}
+                                    </a>
+                                </li>
+                        
+                                <li>
+                                    <i class="fa fa-map-marker"></i>
+                                       {{location}} 
+                                </li>
+                            </ul>
+
+                            <div>
+<ul class="footer socialmedia">
+
+<li>
+<a href="{{gitlink}}" target="_blank" title="Anu's GitHub">
+ <img class="social" src="images/contact/github.png" alt="github-img">
+</a>
+</li>
+
+<li>
+<a href="{{linkdinlink}}" target="_blank" title="Anu's LinkedIn">
+ <img class="social" src="images/contact/linkdin.png" alt="linkdin-img">
+</a>
+</li>
+
+<li><a href="{{instalink}}" target="_blank" title="Anu's Instagram">
+ <img class="social" src="images/contact/insta.png" alt="instagram-img">
+ </a>
+</li>
+
+<li><a href="{{facebooklink}}" target="_blank" title="Anu's Facebook">
+ <img class="social" src="images/contact/facebook.png" alt="facebook-img">
+ </a>
+</li>
+
+<li><a href="{{twitterlink}}" target="_blank" title="Anu's Twitter">
+ <img class="social" src="images/contact/twitter.jpg" alt="twitter-img">
+ </a>
+</li>
+
+<li><a href="{{bloglink}}" target="_blank" title="Anu's Blog">
+ <img class="social" src="images/contact/blog.jpg" alt="blog-img">
+ </a>
+</li>
+
+</ul>
+
+                              
+                            </div>
+                    </div>
+  <!--  =========================end contact box ==========================  -->  
+   </div>
+    {{!--end col 2 --}}
+                 </div> 
+             {{!--end row 1 --}}  
+  <div class="row" style="--bs-gutter-x:0%"> 
+            <div class="col-lg-6" style="flex:1;">
+                  <div id="objective">
+                    {{objective}}
+                 
+                  </div>
+
+                  </div>
+  </div>
+                </div>  
+               {{!--end main col 1 --}}    
+  <!--  =========================end col 1 ==========================  -->            
+  <!--  =========================start col 2 ==========================  -->            
+                <div class="col-lg-6">
+                    <img style="height:auto" src="{{banner}}" alt="banner">
+                </div>
+  <!--  =========================end col 2 ==========================  -->       
+
+
+            </div>
+    </section>
+    <!--  =========================end row 1 ==========================  -->   
+       
+<!--  **************************End HOME **************************  -->
+
+
+
+<!--  **************************Start About Me **************************  -->
+ <!--  ========================= About Area ==========================  -->
+ <section id="aboutme">
+ <!--  =========================start row 2 ==========================  --> 
+                <div class="row">
+  <!--  =========================start col 1 ==========================  -->   
+                    <div class="col-lg-6">
+                        <div class="about-image">
+                            <img src="{{introimg}}" alt="About me"  class="img-fluid">
+                        </div>
+                    </div>
+  <!--  =========================end col 1 ==========================  --> 
+
+<!--  =========================start col 2 ==========================  -->  
+                    <div class="col-lg-6">
+<!--  =========================start text ==========================  --> 
+                         <div class="text">
+                        <h3 style='padding:0%;margin:0%' class="text-uppercase pt-5">
+                           {{introline1}}
+                        </h3>
+                       
+                            <h4>{{intropoint1}}</h4>
+                            <fieldset>{{languages}}</fieldset>
+                            <h4>{{intropoint2}}</h4>
+                            <fieldset>{{editors}}</fieldset>
+                            <h4>{{services}}</h4>
+                            <fieldset>{{servicenames}}</fieldset>
+                              <h4>{{versiontools}}</h4>
+                            <fieldset>{{toolnames}}</fieldset>
+                              <h4>{{deploymenttools}}</h4>
+                            <fieldset>{{depnames}}</fieldset> 
+                            <br/>
+                             <button type="button" class="btn text-uppercase">{{downloadCV}}</button>
+                       
+                    </div>   
+ <!--  =========================end text ==========================  -->                    
+                    </div>
+<!--  =========================end col 2 ==========================  --> 
+                </div>
+ <!--  =========================end row 2 ==========================  -->             
+</section>
+<!--  ========================= End About Me Area ==========================  -->
+
+<!--  **************************End About Me **************************  -->
+
+
+<!--  **************************Start Projects **************************  -->
+  <!--  ========================= Start Projects Area ==========================  -->
+<section id="projects"> 
+
+   <div class="row">
+  <h2 class="mid-title" class="text-uppercase pt-5">{{titlepro}}</h2>
+   </div>
+
+<!--  ========================= Start Row ==========================  -->
+<div class="row">
+<!--  ========================= Start col 1 ==========================  -->
+<div class="col-sm-6">
+              <img  src="images/Projects/5G.jpg" alt="5G Project">
+
+<div class="projects">         
+ <h3>{{currentPro}}</h3>
+              <h4>{{currentPos}}</h4>
+            
+  
+  <ul>
+        <li>
+    {{pro11}}
+        </li>
+        <li>
+     {{pro12}}
+      </li>
+       <li>
+      {{pro13}}
+      </li>
+      <li>
+      {{pro14}}
+      </li>
+</ul>
+
+<h5>{{pro1date}}</h5>
+</div>
+
+</div>
+<!--  ========================= End col 1 ==========================  -->
+
+<!--  ========================= Start col 2 ==========================  -->
+ <div class="col-sm-6">
+            <img src="images/Projects/camera.jpg" alt="Trinetra" >
+    <div class="projects"> 
+              <h3>{{pro2name}}</h3>
+              <h4>{{pro2pos}}</h4>
+      <ul>
+    <li>
+      {{pro21}}
+     </li>
+     <li>
+     {{pro22}}
+     </li>
+     <li>
+      {{pro23}}
+         </li>
+     <li>
+      {{pro24}}
+         </li>
+     <li>
+       {{pro25}}
+          </li>
+     <li>
+       {{pro26}}
+          </li>
+     <li>
+       {{pro27}}
+         </li>
+     <li>
+       {{pro28}}
+        </li>
+      </ul>
+      <h5>{{pro2time}}</h5>
+      </div>
+
+    </div>
+<!--  ========================= End col 2 ==========================  -->
+</div>
+<!--  ========================= End Row ==========================  -->
+
+  <!--  ========================= Start Row ==========================  -->
+<div class="row">
+    <!--  ========================= Start col 1 ==========================  -->
+    <div class="col-sm-6">
+      <img src="images/Projects/callcenter.png" alt="NGUCC Dialer">
+       <div class="projects"> 
+              <h3>{{pro3name}}</h3>
+              <h4>{{pro3pos}}</h4>
+                <ul>
+     <li>
+       {{pro31}}
+       </li>
+     <li>
+      {{pro32}}
+      </li>
+     <li>
+     {{pro33}}
+      </li>
+     <li>
+      {{pro34}}
+      </li>
+     <li>
+       {{pro35}}
+       </li>
+     <li>
+       {{pro36}}
+      </li>
+     <li>
+       {{pro37}}
+  </li>
+     <li>
+  {{pro38}}
+  </li>
+     <li>
+  {{pro39}}
+      </li>
+     <li>
+  {{pro40}}
+        </li>
+
+ 
+</ul>
+      <h5>{{pro3time}}</h5>
+        </div>
+    </div>
+ <!--  ========================= End col 1 ==========================  -->
+
+  <!--  ========================= Start col 2 ==========================  -->
+    <div class="col-sm-6">
+        <img src="{{ticketingimg}}" alt="Ticketing System">
+    
+     <div class="projects"> 
+              <h3>{{pro4name}}</h3>
+              <h4>{{pro4title}}</h4>
+    <ul>
+ <li>
+     {{pro41}}
+        </li>
+     <li>
+       {{pro42}} 
+         </li>
+     <li>
+       {{pro43}}
+        </li>
+     <li>
+       {{pro44}}
+      </li>
+     <li>
+     {{pro45}}
+      </li>
+     <li>
+    {{pro46}}
+   </li>
+     <li>
+  {{pro47}}
+   </li>
+
+     </ul>
+      <h5>{{pro4time}}</h5>
+    </div>
+    </div>
+ <!--  ========================= Start col 2 ==========================  -->
+    
+</div>
+<!--  ========================= End Row ==========================  -->
+
+ <!--  ========================= Start Row ==========================  -->
+  <div class="row">
+       <!--  ========================= Start col 1 ==========================  -->
+      <div class="col-sm-6">
+                  <img src="{{pro5image}}" alt="Oliva Crm" >
+      <div style="height:auto" class="projects"> 
+              <h3>{{pro5name}}</h3>
+              <h4>{{pro5pos}}</h4>
+    <ul>
+ <li>
+      {{pro51}}
+       </li>
+     <li>
+       {{pro52}}
+        </li>
+     <li>
+        {{pro53}}
+         </li>
+     <li>
+         {{pro54}}
+     <li>
+         {{pro55}}
+         </li>
+     <li>
+         {{pro56}}
+          </li>
+     <li>
+         {{pro57}}
+     </li>
+    </ul>
+      <h5>{{pro5time}}</h5>
+    </div>
+    </div>
+ <!--  ========================= End col 1 ==========================  -->
+
+  <!--  ========================= Start col 2 ==========================  -->
+ <div class="col-sm-6">
+         <img src="{{pro6image}}" alt="Online Testing System" >
+        <div style="height:auto" class="projects"> 
+              <h3>{{pro6name}}</h3>
+              <h4>{{pro6pos}}</h4>
+     <ul>
+     <li>
+      {{pro61}}
+       </li>
+     <li>
+      {{pro62}}
+         </li>
+     <li>
+      {{pro63}}
+         </li>
+     <li>
+       {{pro64}}
+           </li>
+ 
+</ul>
+      <h5>{{pro6time}}</h5>
+        </div>
+
+
+
+
+
+
+
+
+</div>
+ <!--  ========================= End col 2 ==========================  -->
+</div>
+ <!--  ========================= End Row ==========================  -->
+</section>
+
+  <!--  ========================= End Projects Area ==========================  -->
+<!--  **************************End Projects **************************  -->
+
+
+ <!--  ========================= Start Organizations Area ==========================  -->
+
+<!--  **************************Start Organizations **************************  -->
+ <section id="organizations">
+	<div class="row">
+      <h2 class="mid-title" class="text-uppercase pt-5" >{{orgtitle}}</h2>
+    </div>
+
+ <!--  ========================= Start row 1 ==========================  -->
+<div class="row">
+  <!--  ========================= Start col 1 ==========================  -->
+     <div class="col-sm-4" >
+         <div class="mid-title" style="margin-top: 1rem;">
+            <img class="companyimg" src="{{embimage}}" alt="Emblogic Embedded Technologies">
+         
+            <span>{{embname}}</span>
+            <span font-size="1px">__________________________________</span>
+            <span>August 2014 - August 2015</span>  
+        </div>
+    </div>  
+ <!--  ========================= End col 1 ==========================  -->
+  <!--  ========================= Start col 2 ==========================  -->
+      <div  class="col-sm-4" >
+           <div class="mid-title" style="margin-top: 1rem;">
+            <img class="companyimg" src="{{avisimage}}" alt="Avissol">
+           
+            <span>{{avisname}}</span>
+            <span font-size="1px">__________________________________</span>
+            <span>{{avistime}}</span>
+            </div>
+    </div>
+ <!--  ========================= End col 2 ==========================  -->
+  <!--  ========================= Start col 3 ==========================  -->
+    <div class="col-sm-4" >
+         <div class="mid-title" style="margin-top: 1rem;">
+            <img class="companyimg" src="{{hclimage}}" alt="HCL Technologies">
+            
+            <span>{{hclname}}</span>
+            <span font-size="1px">__________________________________</span>
+            <span>{{hcltime}}</span>
+        </div>
+    </div>
+ <!--  ========================= End col 3 ==========================  -->
+ {{!-- ++</div> --}}
+
+</div>
+ <!--  ========================= End row  ==========================  -->
+</section>
+<!--  **************************End Organizations **************************  -->
+
+<!--  ========================= End Organizations Area ==========================  -->
+
+
+<!--  ========================= Start Contact Us ==========================  -->
+<section id="contactme">
+ <!--  ========================= Start row ==========================  -->
+<div class="row">
+<!--  ========================= Start col 1 ==========================  -->
+<div class="col-sm-4" >
+             <img src="{{footerimg}}" alt="Avissol">
+             <span style="display:flex;justify-content: space-around;">My name is Anu, from India.</span>
+</div>
+ <!--  ========================= End col 1 ==========================  -->
+  <!--  ========================= Start col 2 ==========================  -->
+<div class="col-sm-7">
+
+<!--  ========================= Start Contact Form ==========================  -->
+<form id="contact-form" method="Post" action="/Home#Contact">
+<table align="center">
+<thead>
+    <th>
+        <h4 class="text-uppercase">
+    <span>{{contactno}}</span>
+</h4>
+    </th>
+  
+     
+</thead>
+
+<tbody>
+<tr>
+<td>
+<input type="text" id="fullname" name="fullname" placeholder="{{name}}" required="">
+<i class="fa fa-user">
+</i>
+</td>
+<td>
+<input type="email" id="emailid" name="emailid" placeholder="{{emailplace}}"  required="">
+<i class="fa fa-envelope"></i>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<textarea class="textarea" id="message" name="message" placeholder="{{messageplace}}" required="">
+</textarea>
+</td>
+</tr>
+
+<tr>
+<td colspan="2" align="center">
+
+{{!-- I can use AJAX to submit the form rather than refreshing all the Home Page again// --}}
+<button type="button"  onclick="validateEmail();" class="btn text-uppercase" >
+<span class="icon">
+<i class="fa fa-paper-plane"></i>
+</span>
+<span>{{send}}</span>
+</button>
+
+</td>
+</tr>
+</tbody>
+
+</table>
+</form>
+</div>
+ <!--  ========================= Start col 2 ==========================  -->
+</div>
+ <!--  ========================= End row ==========================  -->
+</section>
+<!--  ========================= End Contact me ==========================  -->
+
+
+
+
+<!--  ========================= Start Footer ============================  -->
+
+<section id="footer"> 
+<div id="contact">
+ <!--  ========================= Start row ==========================  -->
+<div class="row">
+ <!--  ========================= Start col 1 ==========================  -->          
+<div class="col-sm-3">
+<ul class="footer">
+<li><h5>Categories</h5></li>
+<li>
+<a href="/About">About me</a>
+</li>
+<li>
+<a href="/Home#Projects" onclick="scrollToProjects();">Projects</a>
+</li>
+<li>
+<a href="/Home#Contact" onclick="scrollToBottom();">Contact Me</a></li>
+</ul>
+ </div>
+ <!--  ========================= End col 1 ==========================  -->
+  <!--  ========================= Start col 2 ==========================  -->
+<div class="col-sm-3">
+<ul class="footer">
+<li><h5>Groups</h5></li>
+<li><a href="/#">Web Application</a></li>
+<li><a href="/#">Embedded C</a></li>
+<li><a href="/#">Computer Science</a>
+</li>
+</ul>
+</div>
+ <!--  ========================= End col 2 ==========================  -->
+  <!--  ========================= Start col 3 ==========================  -->
+<div class="col-sm-3">
+<ul class="footer"><li><h5>More About Me</h5></li></ul>
+
+<ul class="footer socialmedia">
+
+<li>
+<a href="{{gitlink}}" target="_blank" title="Anu's GitHub">
+ <img class="social" src="images/contact/github.png" alt="github-img">
+</a>
+</li>
+
+<li>
+<a href="{{linkdinlink}}" target="_blank" title="Anu's LinkedIn">
+ <img class="social" src="images/contact/linkdin.png" alt="linkdin-img">
+</a>
+</li>
+
+<li><a href="{{instalink}}" target="_blank" title="Anu's Instagram">
+ <img class="social" src="images/contact/insta.png" alt="instagram-img">
+ </a>
+</li>
+
+<li><a href="{{facebooklink}}" target="_blank" title="Anu's Facebook">
+ <img class="social" src="images/contact/facebook.png" alt="facebook-img">
+ </a>
+</li>
+
+<li><a href="{{twitterlink}}" target="_blank" title="Anu's Twitter">
+ <img class="social" src="images/contact/twitter.jpg" alt="twitter-img">
+ </a>
+</li>
+
+<li><a href="{{bloglink}}" target="_blank" title="Anu's Blog">
+ <img class="social" src="images/contact/blog.jpg" alt="blog-img">
+ </a>
+</li>
+
+<li>
+<a href="mailto:anubala331@gmail.com" title="email to Anu">
+ <img class="social" src="images/contact/email.png" alt="email-img">
+</a>
+</li>
+
+</ul>
+ </div>
+ <!--  ========================= End col 3 ==========================  -->
+  <!--  ========================= Start col 4 ==========================  -->
+<div class="col-sm-3">
+</div>
+ <!--  ========================= End col 4 ==========================  -->  
+</div>
+ <!--  ========================= End row ==========================  -->  
+</div>
+
+
+
+
+
+<!--  **************************Start copyright info **************************  -->
+<aside style="justify-content:space-between;" class="socialmedia">
+<div class="copyright">
+<p>© 2021 by <b>Anu Bala</b> with 
+<i class="fa fa-heart"></i>
+</p>
+</div>
+
+<ul class="footer">
+<li>
+<a href="#">
+<div style="transform:rotate(-90deg);width:20px">
+<div>
+<svg viewBox="0 0 28 26">
+<path fill="#fff" d="M0,0 28,13 0,26 0,13 20,13 0,7z">
+</path>
+</svg>
+</div>
+ </div>
+</a>
+</li>
+
+<li>
+
+    <a href="/#">Privacy Policy</a> | <a href="/#">Terms &amp; Conditions</a> 
+
+ </li>  
+ </ul>  
+
+</aside> 
+
+
+<!--  **************************End copyright info **************************  -->
+</section>
+
+</div>
+<!--  **************************End Container **************************  -->
+
+
+
+
+
+
+
+
+

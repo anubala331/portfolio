@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head class='header_area'>
+    <!-- bootstrap css and js files from getbootstrap.com -->
+     <link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
+
+  <!-- font awsome icons -->
+   <link rel='stylesheet' href='/stylesheets/all.min.css' />
+
+  <!-- custom css file -->
+      <link rel='stylesheet' href='/stylesheets/style.css' />
+      
+       <!--Jqery JS file from https://jquery.com/ -->
+    <script src='javascripts\Jquery3.6.0.js'></script>
+     <!--JS file from getbootstrap.com -->
+     <script src='\javascripts\bootstrap.min.js'></script>
+     <script src='\javascripts\script.js'></script>
+
+{{!-- <header class="sticky"> --}}
+<header class="sticky main-menu">
+    
+<nav class="navbar navbar-expand-lg navbar-light">
+
+  <div class="container-fluid">
+
+    <a href="#"><img src='/images/logo.PNG' alt='logo' style='width:50px;height:50px;border-radius:20px'></a>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <div class="me-auto"></div>
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/Home">Home</a>
+        </li>
+       
+         <li class="nav-item">
+          <a class="nav-link" href="#Projects"  onclick="scrollToProjects();">Projects</a>
+        </li>
+
+      <li class="nav-item">
+          <a class="nav-link" href="/About">About me</a>
+        </li>
+
+         <li class="nav-item">
+          <a class="nav-link" href="#Contact"  onclick="scrollToBottom();">Contact me</a>
+        </li>
+      
+      </ul>
+    </div>
+  </div>
+</nav>
+  {{!-- </div> --}}
+</header>
+
+<script type="text/javascript">
+window.addEventListener("scroll", function() {
+  var header = document.querySelector("header");
+  header.classList.toggle("sticky", window.scrollY > 0);
+})
+
+var url = window.location.href;
+if(url.includes('/Home#Projects') == true || url.includes('/Home#Contact') == true) {
+    scrollInterval;
+    stopScroll;
+
+    var scrollInterval = setInterval(function () {
+       if(url.includes('/Home#Projects') == true)
+          document.documentElement.scrollTop = document.getElementById('projects').scrollHeight-1500;
+        else 
+          document.documentElement.scrollTop = document.documentElement.scrollHeight;
+    }, 50);
+
+    var stopScroll = setInterval(function () {
+        clearInterval(scrollInterval);
+    }, 100);
+}
+
+</script>
+
+  </head>
+  <body>
+    {{{body}}}
+  </body>
+</html>
