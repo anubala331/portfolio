@@ -30,7 +30,7 @@
       <div class="me-auto"></div>
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="/Home">Home</a>
+          <a class="nav-link" aria-current="page" href="/">Home</a>
         </li>
        
          <li class="nav-item">
@@ -59,12 +59,12 @@ window.addEventListener("scroll", function() {
 })
 
 var url = window.location.href;
-if(url.includes('/Home#Projects') == true || url.includes('/Home#Contact') == true) {
+if(url.includes('/#Projects') == true || url.includes('/#Contact') == true) {
     scrollInterval;
     stopScroll;
 
     var scrollInterval = setInterval(function () {
-       if(url.includes('/Home#Projects') == true)
+       if(url.includes('/#Projects') == true)
           document.documentElement.scrollTop = document.getElementById('projects').scrollHeight-1500;
         else 
           document.documentElement.scrollTop = document.documentElement.scrollHeight;

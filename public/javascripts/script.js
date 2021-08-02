@@ -1,7 +1,7 @@
 function scrollToBottom() {
 
     if(document.getElementById('contactme') == null) {
-        window.location.href = "/Home#Contact";
+        window.location.href = "/#Contact";
     }
 
     scrollInterval;
@@ -19,7 +19,7 @@ function scrollToBottom() {
 
 function scrollToProjects() {
     if(document.getElementById('projects') == null) {
-        window.location.href = "/Home#Projects";
+        window.location.href = "/#Projects";
     }
     scrollInterval;
     stopScroll;

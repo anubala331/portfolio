@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 
-router.get('/Home', function(req, res, next) {
+router.get('/', function(req, res, next) {
   res.render('Home/index',
    { 
      profile: '/images/profile.png',
